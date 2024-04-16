@@ -1,6 +1,8 @@
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
+import store from "../store";
 
+const test = computed(() => store.state.test);
 defineProps({
   msg: String,
 });
@@ -17,6 +19,7 @@ const count = ref(0);
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
     </p>
+    <p class="text-red-900">{{ test }}</p>
   </div>
 
   <p>
