@@ -4,12 +4,13 @@ import About from "../views/About.vue";
 import Contact from "../views/Contact.vue";
 import Login from "../views/Login.vue";
 import RequestPasswordReset from "../views/RequestPasswordReset.vue";
+import ResetPassword from "../views/ResetPassword.vue";
 
 
 const routes=[
 
     {
-        path: '/dashboard',
+        path: '/',
         name: 'dashboard',
         component: Dashboard
     },
@@ -31,11 +32,16 @@ const routes=[
         component: Login
     },
     {
-        path: '/password-reset',
+        path: '/requestpasswordreset',
         name:'RequestPasswordReset',
         component:RequestPasswordReset,
         //component: () => import('../store/views/Register.vue')
-    }
+    },
+    {
+        path:'/resetpassword/:token',
+        name:'ResetPassword',
+        component:ResetPassword
+    },
 
 ];
 
