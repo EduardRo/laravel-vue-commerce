@@ -42,7 +42,10 @@ const routes=[
         name:'ResetPassword',
         component:ResetPassword
     },
-    {path:'/test',component:()=>import('../views/Test.vue')},
+    {
+        path:'/test',
+        component:()=>import('../views/Test.vue')
+    },
 
 ];
 
