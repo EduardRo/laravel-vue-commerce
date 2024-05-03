@@ -5,9 +5,15 @@ import Contact from "../views/Contact.vue";
 import Login from "../views/Login.vue";
 import RequestPasswordReset from "../views/RequestPasswordReset.vue";
 import ResetPassword from "../views/ResetPassword.vue";
+import AppLayout from "../components/AppLayout.vue";
 
 
 const routes=[
+    {
+        path: '/app',
+        name: 'app',
+        component: AppLayout
+    },
 
     {
         path: '/',

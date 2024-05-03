@@ -77,6 +77,7 @@
 
 <script>
 import GuestLayout from "../components/GuestLayout.vue";
+import { ChipIcon } from "@vue-hero-icons/outline";
 
 export default {
   name: "ResetPassword",
